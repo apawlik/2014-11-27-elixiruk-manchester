@@ -67,8 +67,8 @@ sub {
 }
 
 img {
-  width: auto\9;
-  height: 100%;
+  width: auto;
+  height: 85px;
   max-width: 100%;
   vertical-align: middle;
   border: 0;
