@@ -7,7 +7,7 @@ github_url      : "https://github.com/datacarpentry"
 swc_prefix      : "http://datacarpentry.org"
 twitter_name    : "@datacarpentry"
 defaults:
-  - scope:
-      path: "lessons" # an empty string here means all files in the project
-    values:
-      layout: "lesson"
+  scope:
+    path : "lessons" # an empty string here means all files in the project
+  values:
+    layout : "lesson"
