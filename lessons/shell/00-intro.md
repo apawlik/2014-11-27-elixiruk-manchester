@@ -11,14 +11,57 @@ title: Introducing the Shell
 
 </div>
 
-#### What and Why
+Nelle Nemo, a marine biologist,
+has just returned from a six-month survey of the
+[North Pacific Gyre](http://en.wikipedia.org/wiki/North_Pacific_Gyre),
+where she has been sampling gelatinous marine life in the
+[Great Pacific Garbage Patch](http://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch).
+She has 300 samples in all, and now needs to:
+
+1.  Run each sample through an assay machine
+    that will measure the relative abundance of 300 different proteins.
+    The machine's output for a single sample is
+    a file with one line for each protein.
+2.  Calculate statistics for each of the proteins separately
+    using a program her supervisor wrote called `goostat`.
+3.  Compare the statistics for each protein
+    with corresponding statistics for each other protein
+    using a program one of the other graduate students wrote called `goodiff`.
+4.  Write up.
+    Her supervisor would really like her to do this by the end of the month
+    so that her paper can appear in an upcoming special issue of *Aquatic Goo Letters*.
+
+It takes about half an hour for the assay machine to process each sample.
+The good news is,
+it only takes two minutes to set each one up.
+Since her lab has eight assay machines that she can use in parallel,
+this step will "only" take about two weeks.
+
+The bad news is that if she has to run `goostat` and `goodiff` by hand,
+she'll have to enter filenames and click "OK" 45,150 times
+(300 runs of `goostat`, plus 300&times;299/2 runs of `goodiff`).
+At 30 seconds each,
+that will take more than two weeks.
+Not only would she miss her paper deadline,
+the chances of her typing all of those commands right are practically zero.
+
+The next few lessons will explore what she should do instead.
+More specifically,
+they explain how she can use a command shell
+to automate the repetitive steps in her processing pipeline
+so that her computer can work 24 hours a day while she writes her paper.
+As a bonus,
+once she has put a processing pipeline together,
+she will be able to use it again whenever she collects more data.
+
+### What and Why
 
 At a high level, computers do four things:
 
--   run programs;
--   store data;
--   communicate with each other; and
--   interact with us.
+-   run programs
+-   store data
+-   communicate with each other
+-   interact with us
 
 They can do the last of these in many different ways,
 including direct brain-computer links and speech interfaces.
@@ -38,11 +81,11 @@ These devices only allowed input and output of the letters, numbers, and punctua
 so programming languages and interfaces had to be designed around that constraint.
 
 This kind of interface is called a
-[command-line interface](../../gloss.html#cli), or CLI,
+[command-line interface](../../gloss.html#command-line-interface), or CLI,
 to distinguish it from the
-[graphical user interface](../../gloss.html#gui), or GUI,
+[graphical user interface](../../gloss.html#graphical-user-interface), or GUI,
 that most people now use.
-The heart of a CLI is a [read-evaluate-print loop](../../gloss.html#repl), or REPL:
+The heart of a CLI is a [read-evaluate-print loop](../../gloss.html#read-eval-print-loop), or REPL:
 when the user types a command and then presses the enter (or return) key,
 the computer reads it,
 executes it,

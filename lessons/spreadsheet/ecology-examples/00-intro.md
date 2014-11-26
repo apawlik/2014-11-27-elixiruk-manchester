@@ -37,5 +37,6 @@ In this lesson, we’re going to talk about:
 3. [Dates as data.](03-dates-as-data.html)
 4. [Basic quality control and data manipulation in spreadsheets.](04-quality-control.html)
 5. [Exporting data from spreadsheets.](05-exporting-data.html)
+6. [Caveats of popular data and file formats.](06-data-formats-caveats.html)
 
 Next: [Formatting data tables in spreadsheets.](01-format-data.html)
