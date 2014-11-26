@@ -2,7 +2,7 @@
 layout: lesson
 root: ../..
 ---
-
+**no explanation for what the following lines do - learners benefit from some kind of words otherwise feel lost straight away**
 
 
 ## Analyzing Patient Data
@@ -12,6 +12,7 @@ and need to analyze the first dozen data sets.
 The data sets are stored in [comma-separated values](../../gloss.html#comma-separeted-values) (CSV) format: each row holds information for a single patient, and the columns represent successive days. 
 The first few rows of our first file look like this:
 
+**again explanation needed as to what is happening**
 
 <div class='out'><pre class='out'><code>0,0,1,3,1,2,4,7,8,3,3,3,10,5,7,4,7,7,12,18,6,13,11,11,7,7,4,6,8,8,4,4,5,7,3,4,2,3,0,0
 0,1,2,1,2,1,3,2,2,6,10,11,5,9,4,4,7,16,8,6,18,4,12,5,12,7,11,5,11,3,3,5,4,4,5,5,1,1,0,1
@@ -20,15 +21,15 @@ The first few rows of our first file look like this:
 0,1,1,3,3,1,3,5,2,4,4,7,6,5,3,10,8,10,6,17,9,14,9,7,13,9,12,6,7,7,9,6,3,2,2,4,2,0,1,1
 </code></pre></div>
 
-We want to:
+**this is no the way people learn!, first want to feel comfortable with the data describing it - format, columns, type of data in each column, does it have nulls as this needs special processing**
 
-* load that data into memory,
-* calculate the average inflammation per day across all patients, and
-* plot the result.
+### Aim
+We want to *plot the average inflammation per day across all patients* using R (of course)
 
-To do all that, we'll have to learn a little bit about programming.
+To do this we will learn about the steps we need to perform (e.g. load, calculate, plot) and how these are done in R.
 
-#### Objectives
+#### Steps
+To be able to do our plot which is our aim we need to be able to understand and perform the following steps:
 
 * Read tabular data from a file into a program.
 * Assign values to variables.
@@ -37,6 +38,7 @@ To do all that, we'll have to learn a little bit about programming.
 * Display simple graphs.
 
 ### Loading Data
+**Need an explanation of the data - is it a timeseries - describe it - er data is important but have to know what it is trying to represent and how it was collected and what are the units'
 
 To load our inflammation data, first we need to locate our data.
 We can change the current working directory to the location of the CSV files using the function `setwd`.
@@ -245,7 +247,7 @@ We can see the dimensions, or [shape](../../gloss.html#shape), of the data frame
 <div class='out'><pre class='out'><code>[1] 60 40
 </code></pre></div>
 
-This tells us that our data frame, `dat`, has 60 rows and 40 columns.
+This tells us that our data frame, `dat`, has `nrow(dat)` rows and `ncol(dat)` columns. `dim(dat)` returns the number of rows first and then the number of columns for a data frame.
 
 If we want to get a single value from the data frame, we can provide an [index](../../gloss.html#index) in square brackets, just as we do in math:
 
@@ -409,7 +411,7 @@ sd(dat[, 7])</code></pre>
 
 
 
-<div class='out'><pre class='out'><code>[1] 1.725
+<div class='out'><pre class='out'><code>[1] 1.725187
 </code></pre></div>
 
 What if we need the maximum inflammation for all patients, or the average for each day?
@@ -440,6 +442,7 @@ We'll learn why this is so in the next lesson.
 For example, you can calculate the row-wise or column-wise means with `rowMeans` and `colMeans`, respectively.
 
 #### Challenge
+**good to have but need to let people know where to get help - perhaps add a section at the beginning**
 
 A subsection of a data frame is called a [slice](../../gloss.html#slice).
 We can take slices of character vectors as well:
@@ -485,7 +488,7 @@ Plotting the values is done with the function `plot`.
 
 <pre class='in'><code>plot(avg_day_inflammation)</code></pre>
 
-<img src="figure/01-starting-with-data-plot-avg-inflammation.png" title="plot of chunk plot-avg-inflammation" alt="plot of chunk plot-avg-inflammation" style="display: block; margin: auto;" />
+<img src="figure/01-starting-with-data-plot-avg-inflammation-1.png" title="plot of chunk plot-avg-inflammation" alt="plot of chunk plot-avg-inflammation" style="display: block; margin: auto;" />
 
 Above, we gave the function `plot` a vector of numbers corresponding to the average inflammation per day across all patients.
 `plot` created a scatter plot where the y-axis is the average inflammation level and the x-axis is the order, or index, of the values in the vector, which in this case correspond to the 40 days of treatment.
@@ -496,13 +499,13 @@ Let's have a look at two other statistics: the maximum and minimum inflammation 
 <pre class='in'><code>max_day_inflammation <- apply(dat, 2, max)
 plot(max_day_inflammation)</code></pre>
 
-<img src="figure/01-starting-with-data-plot-max-inflammation.png" title="plot of chunk plot-max-inflammation" alt="plot of chunk plot-max-inflammation" style="display: block; margin: auto;" />
+<img src="figure/01-starting-with-data-plot-max-inflammation-1.png" title="plot of chunk plot-max-inflammation" alt="plot of chunk plot-max-inflammation" style="display: block; margin: auto;" />
 
 
 <pre class='in'><code>min_day_inflammation <- apply(dat, 2, min)
 plot(min_day_inflammation)</code></pre>
 
-<img src="figure/01-starting-with-data-plot-min-inflammation.png" title="plot of chunk plot-min-inflammation" alt="plot of chunk plot-min-inflammation" style="display: block; margin: auto;" />
+<img src="figure/01-starting-with-data-plot-min-inflammation-1.png" title="plot of chunk plot-min-inflammation" alt="plot of chunk plot-min-inflammation" style="display: block; margin: auto;" />
 
 The maximum value rises and falls perfectly smoothly, while the minimum seems to be a step function. Neither result seems particularly likely, so either there's a mistake in our calculations or something is wrong with our data.
 
