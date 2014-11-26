@@ -6,8 +6,7 @@ title: "R"
 
 # List of R lessons
 
-* [Getting started](01-starting-with-data.html)
-*
+* [Getting started](01-starting-with-data.html)*
 
 # Data files
 
