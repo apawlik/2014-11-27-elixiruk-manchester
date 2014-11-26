@@ -1,4 +1,9 @@
-## Common mistakes by spreadsheet users
+---
+layout: lesson
+root: ../../..
+title: "Common mistakes by spreadsheet users"
+---
+
 
 Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Ben Marwick**, and **Sebastian Kupny**

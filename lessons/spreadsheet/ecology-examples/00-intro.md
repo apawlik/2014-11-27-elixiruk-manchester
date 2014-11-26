@@ -1,4 +1,10 @@
-# Using spreadsheet programs for scientific data #
+---
+layout: lesson
+root: ../../..
+title: "Using spreadsheet programs for scientific data"
+---
+
+
 
 Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Ben Marwick**, and **Sebastian Kupny**
