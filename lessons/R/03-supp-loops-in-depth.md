@@ -117,8 +117,164 @@ system.time(avg2 <- analyze2(filenames))</code></pre>
 
 
 
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in cbind(out, res): number of rows of result is not a multiple of
+vector length (arg 2)
+</code></pre></div>
+
+
+
 <div class='out'><pre class='out'><code>   user  system elapsed 
-  0.044   0.000   0.045 
+  0.073   0.004   0.102 
 </code></pre></div>
 
 Note how we add a new column to `out` at each iteration?
@@ -142,8 +298,48 @@ system.time(avg3 <- analyze3(filenames))</code></pre>
 
 
 
-<div class='out'><pre class='out'><code>   user  system elapsed 
-  0.056   0.004   0.057 
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Error in out[, f] <- apply(fdata, 2, mean): number of items to replace is not a multiple of replacement length
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Timing stopped at: 0.009 0 0.009 
 </code></pre></div>
 
 In this simple example there is little difference in the compute time of `analyze2` and `analyze3`.

@@ -91,11 +91,7 @@ print("done")</code></pre>
 
 
 <div class='out'><pre class='out'><code>[1] "not greater"
-</code></pre></div>
-
-
-
-<div class='out'><pre class='out'><code>[1] "done"
+[1] "done"
 </code></pre></div>
 
 The second line of this code uses an `if` statement to tell R that we want to make a choice.
@@ -222,11 +218,11 @@ In this case, "either" means "either or both", not "either one or the other but 
 <pre class='in'><code>dat <- read.csv("inflammation-01.csv", header = FALSE)
 plot_dist(dat[, 10], threshold = 10)  # day (column) 10</code></pre>
 
-<img src="figure/04-cond-conditional-challenge1.png" title="plot of chunk conditional-challenge" alt="plot of chunk conditional-challenge" style="display: block; margin: auto;" />
+<img src="figure/04-cond-conditional-challenge-1.png" title="plot of chunk conditional-challenge" alt="plot of chunk conditional-challenge" style="display: block; margin: auto;" />
 
 <pre class='in'><code>plot_dist(dat[1:5, 10], threshold = 10)  # samples (rows) 1-5 on day (column) 10</code></pre>
 
-<img src="figure/04-cond-conditional-challenge2.png" title="plot of chunk conditional-challenge" alt="plot of chunk conditional-challenge" style="display: block; margin: auto;" />
+<img src="figure/04-cond-conditional-challenge-2.png" title="plot of chunk conditional-challenge" alt="plot of chunk conditional-challenge" style="display: block; margin: auto;" />
 
   + One of your collaborators prefers to see the distributions of the larger vectors as a histogram instead of as a boxplot.  In order to choose between a histogram and a boxplot we will edit the function `plot_dist` and add an additional argument `use_boxplot`.  By defualt we will set `use_boxplot` to `TRUE` which will create a boxplot when the vector is longer than `threshold`.  When `use_boxplot` is set to `FALSE`, `plot_dist` will instead plot a histogram for the larger vectors.  As before, if the length of the vector is shorter than `threshold`, `plot_dist` will create a stripchart.  A histogram is made with the `hist` command in R.  
 
@@ -236,15 +232,15 @@ plot_dist(dat[, 10], threshold = 10)  # day (column) 10</code></pre>
 <pre class='in'><code>dat <- read.csv("inflammation-01.csv", header = FALSE)
 plot_dist(dat[, 10], threshold = 10, use_boxplot = TRUE)  # day (column) 10 - create boxplot</code></pre>
 
-<img src="figure/04-cond-conditional-challenge-hist1.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
+<img src="figure/04-cond-conditional-challenge-hist-1.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
 
 <pre class='in'><code>plot_dist(dat[, 10], threshold = 10, use_boxplot = FALSE)  # day (column) 10 - create histogram</code></pre>
 
-<img src="figure/04-cond-conditional-challenge-hist2.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
+<img src="figure/04-cond-conditional-challenge-hist-2.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
 
 <pre class='in'><code>plot_dist(dat[1:5, 10], threshold = 10)  # samples (rows) 1-5 on day (column) 10</code></pre>
 
-<img src="figure/04-cond-conditional-challenge-hist3.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
+<img src="figure/04-cond-conditional-challenge-hist-3.png" title="plot of chunk conditional-challenge-hist" alt="plot of chunk conditional-challenge-hist" style="display: block; margin: auto;" />
 </div>
 
 ### Saving automatically generated figures
@@ -302,7 +298,7 @@ Now we can use `analyze` both interactively:
 
 <pre class='in'><code>analyze("inflammation-01.csv")</code></pre>
 
-<img src="figure/04-cond-inflammation-011.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" /><img src="figure/04-cond-inflammation-012.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" /><img src="figure/04-cond-inflammation-013.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" />
+<img src="figure/04-cond-inflammation-01-1.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" /><img src="figure/04-cond-inflammation-01-2.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" /><img src="figure/04-cond-inflammation-01-3.png" title="plot of chunk inflammation-01" alt="plot of chunk inflammation-01" style="display: block; margin: auto;" />
 
 and to save plots:
 
@@ -338,6 +334,27 @@ Now we can save all of the results with just one line of code:
 
 
 <pre class='in'><code>analyze_all("csv")</code></pre>
+
+
+
+<div class='out'><pre class='out'><code>Warning in mean.default(newX[, i], ...): argument is not numeric or
+logical: returning NA
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in min(x): no non-missing arguments to min; returning Inf
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Warning in max(x): no non-missing arguments to max; returning -Inf
+</code></pre></div>
+
+
+
+<div class='out'><pre class='out'><code>Error in plot.window(...): need finite 'ylim' values
+</code></pre></div>
 
 Now if we need to make any changes to our analysis, we can edit the `analyze` function and quickly regenerate all the figures with `analzye_all`.
 

@@ -71,15 +71,10 @@ Now we can run the code in the file we created from the Unix Shell using `Rscrip
 
 
 <div class='out'><pre class='out'><code>R version 3.1.1 (2014-07-10)
-Platform: x86_64-pc-linux-gnu (64-bit)
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  base     
@@ -108,7 +103,7 @@ Let's see what happens when we run this program in the Unix Shell:
 
 
 
-<div class='out'><pre class='out'><code>/usr/lib/R/bin/exec/R
+<div class='out'><pre class='out'><code>/Library/Frameworks/R.framework/Resources/bin/exec/R
 --slave
 --no-restore
 --file=print-args.R
@@ -133,7 +128,7 @@ Thus running a file with Rscript is an easier way to run the following:
 
 
 
-<div class='out'><pre class='out'><code>/usr/lib/R/bin/exec/R
+<div class='out'><pre class='out'><code>/Library/Frameworks/R.framework/Resources/bin/exec/R
 --slave
 --no-restore
 --file=print-args.R
@@ -148,7 +143,7 @@ If we run it with a few arguments, however:
 
 
 
-<div class='out'><pre class='out'><code>/usr/lib/R/bin/exec/R
+<div class='out'><pre class='out'><code>/Library/Frameworks/R.framework/Resources/bin/exec/R
 --slave
 --no-restore
 --file=print-args.R
@@ -328,27 +323,16 @@ main()
 <div class='out'><pre class='out'><code>inflammation-01.csv
 inflammation-01.pdf
 inflammation-02.csv
-inflammation-02.pdf
 inflammation-03.csv
-inflammation-03.pdf
 inflammation-04.csv
-inflammation-04.pdf
 inflammation-05.csv
-inflammation-05.pdf
 inflammation-06.csv
-inflammation-06.pdf
 inflammation-07.csv
-inflammation-07.pdf
 inflammation-08.csv
-inflammation-08.pdf
 inflammation-09.csv
-inflammation-09.pdf
 inflammation-10.csv
-inflammation-10.pdf
 inflammation-11.csv
-inflammation-11.pdf
 inflammation-12.csv
-inflammation-12.pdf
 </code></pre></div>
 
 

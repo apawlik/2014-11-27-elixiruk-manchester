@@ -1,3 +1,8 @@
+---
+layout: lesson
+root: ../..
+---
+
 
 
 # Taking notes and creating reports:
@@ -9,15 +14,9 @@
 knitr extracts R code in the input document (.Rmd), evaluates it and writes the results to the output document (html). There are two types of R code: chunks (code as separate paragraphs) and inline R code.
 
 
-```r
-install.packages("knitr")
-```
+<pre class='in'><code>install.packages("knitr")</code></pre>
 
-
-```r
-library(knitr)
-```
-
+<pre class='in'><code>library(knitr)</code></pre>
 
 Restart RStudio. 
 Open a new `Rmd` file. 
@@ -25,10 +24,18 @@ Open a new `Rmd` file.
 In Rmd, anything between lines that start and end with triple quotes ``` will be run as R code.
 
 
-```r
-summary(cars)
-```
+<pre class='in'><code>summary(cars)</code></pre>
 
+
+
+<div class='out'><pre class='out'><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  
+</code></pre></div>
 
 ### Challenge
 
