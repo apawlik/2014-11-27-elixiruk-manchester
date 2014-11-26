@@ -1,3 +1,6 @@
 [submodule "isa-tools"]
 	path = isa-tools
 	url = https://github.com/ISA-tools/DataCarpentry-TrainingMaterial.git
+[submodule "test-isa"]
+	path = test-isa
+	url = https://github.com/apawlik/DataCarpentry-TrainingMaterial.git
