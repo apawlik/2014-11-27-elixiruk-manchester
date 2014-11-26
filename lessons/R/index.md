@@ -1,7 +1,7 @@
 ---
-root: ../..
 layout: lesson
-title: "R lesson"
+root: ../..
+title: "R"
 ---
 
 # List of R lessons
