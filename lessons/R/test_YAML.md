@@ -1,10 +1,3 @@
----
-layout: lesson
-root: ../..
-title: "RtestR "
----
-
-
 # List of R lessons
 
 * [Getting started](01-starting-with-data.html)*
