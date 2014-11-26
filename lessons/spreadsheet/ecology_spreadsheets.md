@@ -1,10 +1,6 @@
 ---
-layout: lesson
-root: ../..
-title: Introducing the Shell
+title: Using spreadsheet programs for scientific data
 ---
-
-# Using spreadsheet programs for scientific data #
 
 Contributors: Christie Bahlai, Aleksandra Pawlik, Tracy Teal
 
