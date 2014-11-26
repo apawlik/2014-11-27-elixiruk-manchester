@@ -1,7 +1,7 @@
 ---
 layout: lesson
 root: ../..
-title: "Spreadsheets"
+title: "R"
 ---
 
 Contributors: Christie Bahlai, Aleksandra Pawlik, Tracy Teal
