@@ -1,4 +1,8 @@
-# Using spreadsheet programs for scientific data #
+---
+layout: lesson
+root: ../..
+title: "R"
+---
 
 Contributors: Christie Bahlai, Aleksandra Pawlik, Tracy Teal
 
