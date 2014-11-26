@@ -1,4 +1,5 @@
 ---
+layout: lesson
 title: "Spreadsheets"
 ---
 Contributors: Christie Bahlai, Aleksandra Pawlik, Tracy Teal
