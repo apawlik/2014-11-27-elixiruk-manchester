@@ -1,8 +1,4 @@
----
-layout: lesson
-root: ../..
-title: "R "
----
+
 
 
 # List of R lessons
