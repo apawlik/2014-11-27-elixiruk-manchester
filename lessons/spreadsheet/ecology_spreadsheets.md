@@ -1,5 +1,6 @@
 ---
 layout: lesson
+root: ../..
 title: "Spreadsheets"
 ---
 
