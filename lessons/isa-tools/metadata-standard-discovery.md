@@ -1,6 +1,6 @@
 ---
 layout: lesson
-root: ../../..
+root: ../..
 title: "Discovery of Metadata Standards and Databases"
 ---
 
