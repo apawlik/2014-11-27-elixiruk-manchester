@@ -1,7 +1,3 @@
----
-title: Using spreadsheet programs for scientific data
----
-
 Contributors: Christie Bahlai, Aleksandra Pawlik, Tracy Teal
 
 ---
