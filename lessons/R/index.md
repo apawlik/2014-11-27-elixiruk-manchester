@@ -1,6 +1,7 @@
 ---
 root: ../..
-title: "Spreadsheets"
+layout: lesson
+title: "R lesson"
 ---
 
 # List of R lessons
