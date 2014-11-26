@@ -1,8 +1,7 @@
 ## Dates as data ##
 
 Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
-**Ben Marwick**
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Ben Marwick**, and **Sebastian Kupny**
 
 Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
 

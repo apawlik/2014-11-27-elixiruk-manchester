@@ -1,8 +1,7 @@
 ## Common mistakes by spreadsheet users
 
 Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
-**Ben Marwick**
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Ben Marwick**, and **Sebastian Kupny**
 
 ## Not filling in zeroes ##
 **Example**: When entering count data for a community, nonzero observations may be rare- why bother if they’re mostly zeroes?

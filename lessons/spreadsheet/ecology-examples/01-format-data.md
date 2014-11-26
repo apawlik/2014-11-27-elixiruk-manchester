@@ -1,8 +1,14 @@
-# Formatting data tables in Spreadsheets #
+---
+layout: lesson
+root: ../..
+title: "Formatting data tables in Spreadsheets"
+---
+
+
 
 Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and
-**Ben Marwick**
+Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, 
+**Ben Marwick** and **Sebastian Kupny**
 
 
 The most common mistake a casual spreadsheet user makes is by treating the program like it is a lab notebook- that is, relying on context, notes in the margin, spatial layout of data and fields to convey information. As humans, we can (usually) interpret these things, but computers are dumb, and unless we explain to the computer what every single thing means, it will not be able to see how our data fit together.
@@ -33,10 +39,8 @@ A common grad student error I’ve seen is creating multiple data tables within 
 
 
 But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there. Say, for instance, you make a separate tab for each day you take a measurement.
-<!---
-#![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1.png)
--->
-![Each table in separate worksheet](../../../img/excel_tables_example_sk_e1_p1_wrl.png)
+
+![Each table in separate worksheet](./../images/excel_tables_example_sk_e1_p1_wrl.png)
 
 
 This is bad practice for two reasons: 1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and 2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine tabs- and if the tabs are inconsistently formatted, you might even have to do it by hand!
@@ -45,7 +49,8 @@ The next time you’re entering data, and you go to create another tab or table,
 
 Your data sheet might get very long over the course of experiment. This makes it harder to enter data if you can’t see your headers at the top of the spreadsheet. But do NOT repeat headers. These can easily get mixed into the data, leading to problems down the road.
 
-[Show an example of how to freeze panes in Excel]
+####Challenge
+Spreadsheet applications, such as Excel, allow you to 
 
 
 Previous: [Introduction](00-intro.md)  Next: [Common formatting mistakes by spreadsheet users.](02-common-mistakes.md)
