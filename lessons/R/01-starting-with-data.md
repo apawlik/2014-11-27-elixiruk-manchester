@@ -2,7 +2,7 @@
 layout: lesson
 root: ../..
 ---
-**no explanation for what the following lines do - learners benefit from some kind of words otherwise feel lost straight away**
+
 
 
 ## Analyzing Patient Data
@@ -12,7 +12,7 @@ and need to analyze the first dozen data sets.
 The data sets are stored in [comma-separated values](../../gloss.html#comma-separeted-values) (CSV) format: each row holds information for a single patient, and the columns represent successive days. 
 The first few rows of our first file look like this:
 
-**again explanation needed as to what is happening**
+
 
 <div class='out'><pre class='out'><code>0,0,1,3,1,2,4,7,8,3,3,3,10,5,7,4,7,7,12,18,6,13,11,11,7,7,4,6,8,8,4,4,5,7,3,4,2,3,0,0
 0,1,2,1,2,1,3,2,2,6,10,11,5,9,4,4,7,16,8,6,18,4,12,5,12,7,11,5,11,3,3,5,4,4,5,5,1,1,0,1
@@ -21,7 +21,6 @@ The first few rows of our first file look like this:
 0,1,1,3,3,1,3,5,2,4,4,7,6,5,3,10,8,10,6,17,9,14,9,7,13,9,12,6,7,7,9,6,3,2,2,4,2,0,1,1
 </code></pre></div>
 
-**this is no the way people learn!, first want to feel comfortable with the data describing it - format, columns, type of data in each column, does it have nulls as this needs special processing**
 
 ### Aim
 We want to *plot the average inflammation per day across all patients* using R (of course)
