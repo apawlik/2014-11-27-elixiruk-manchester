@@ -26,7 +26,7 @@ For example, our data could look like this:
 In record `AH,Ammospermophilus,harrisi,Rodent-not,censused` the value for *taxa* includes a comma (`Rodent-not,censused`). 
 If we try to read the above into Excel (or other spreadsheet programme), we will get something like this:
 
-![Issue with importing csv format](../../../img/csv-mistake.png)
+![Issue with importing csv format](../images/csv-mistake.png)
 
 The value for 'taxa' was split into two columns (instead of being put in one column `D`). This can propagate to a number of further errors. For example, the "extra" column will be interpreted as a column with many missing values (and without a proper header!). In addition to that, the value in column `D` for the record in row 3 (so the one where the value for 'taxa' contained the comma) is now incorrect. 
  
@@ -63,8 +63,5 @@ If the dataset you're dealing with contains hundreds or thousands of records, cl
 Cleaning up datasets is one of major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. Other lessons in Data Carpentry covering shell, Python and R will give you the basis for developing skills to build relevant scripts.
 
 
-###Tab Separated Values format
-
-###Other delimiters for data formats
 
 Previous: [Exporting data from spreadsheets.](05-exporting-data.html)
