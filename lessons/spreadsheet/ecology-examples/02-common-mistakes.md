@@ -53,8 +53,8 @@ From White et al, 2013, [Nine simple ways to make it easier to (re)use your data
 **Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.  
 **Solution**: Never, ever, EVER include more than one piece of information in a cell. If you need both these measurements, design your data sheet to include this information.
 
-![Each table in separate worksheet](../imgages/excel_tables_example_sk_e2_p1_wrl.png)
-![Each table in separate worksheet](../imgages/excel_tables_example_sk_e2_p2.png)
+![Each table in separate worksheet](../images/excel_tables_example_sk_e2_p1_wrl.png)
+![Each table in separate worksheet](../images/excel_tables_example_sk_e2_p2.png)
 
 ## Field name problems ##
 Choose descriptive field names, but be careful not to include: spaces, numbers, or special characters of any kind. Spaces can be misinterpreted and some programs don’t like field names that are text strings that start with numbers.
