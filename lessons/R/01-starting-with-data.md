@@ -439,8 +439,6 @@ We'll learn why this is so in the next lesson.
 For example, you can calculate the row-wise or column-wise means with `rowMeans` and `colMeans`, respectively.
 
 #### Challenge
-**good to have but need to let people know where to get help - perhaps add a section at the beginning**
-
 A subsection of a data frame is called a [slice](../../gloss.html#slice).
 We can take slices of character vectors as well:
 
