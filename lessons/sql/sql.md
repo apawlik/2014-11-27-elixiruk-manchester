@@ -179,7 +179,7 @@ Saving & Exporting results
 * Save: **View** drop down and **Create View**
 
 
-<a name="save query"></a>Saving queries
+<a name="save-query"></a>Saving queries
 --------------------------------------
 To enable saving queries from the main menu select **Tools** -> **Use Table for Extension Data**:
 
