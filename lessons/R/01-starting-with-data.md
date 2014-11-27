@@ -37,8 +37,6 @@ To be able to do our plot which is our aim we need to be able to understand and 
 * Display simple graphs.
 
 ### Loading Data
-**Need an explanation of the data - is it a timeseries - describe it - er data is important but have to know what it is trying to represent and how it was collected and what are the units'
-
 To load our inflammation data, first we need to locate our data.
 We can change the current working directory to the location of the CSV files using the function `setwd`.
 For example, if the CSV files are located in a directory named `swc` in our home directory, we would change the working directory using the following command:
