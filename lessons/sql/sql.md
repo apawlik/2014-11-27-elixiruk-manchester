@@ -5,15 +5,6 @@ title: "Databases using SQL"
 ---
 
 
-Setup
------
-
-1. Install Firefox
-2. Install the SQLite Manager add on **Tools -> Add-ons -> Search -> SQLite
-Manager -> Install -> Restart**
-3. Download the [Portal Database](../../data/biology/portal_mammals.sqlite)
-4. Open SQLite Manage **Firefox Button -> Web Developer -> SQLite Manager**
-
 
 Relational databases
 --------------------
@@ -37,19 +28,6 @@ Access, Filemaker Pro). The only things that will differ are the details of
 exactly how to import and export data and the [details of data types](#datatypediffs).
 
 
-The data
---------
-
-This is data on a small mammal community in southern Arizona over the last 35
-years.  This is part of a larger project studying the effects of rodents and
-ants on the plant community.  The rodents are sampled on a series of 24 plots,
-with different experimental manipulations of which rodents are allowed to access
-the plots.
-
-This is a real dataset that has been used in over 100 publications.  I've
-simplified it just a little bit for the workshop, but you can download the
-[full dataset](http://esapubs.org/archive/ecol/E090/118/) and work with it using
-exactly the same tools we'll learn about today.
 
 
 Database Design
@@ -65,6 +43,33 @@ Database Design
        reconnect (foreign key).
 
 
+
+The data
+--------
+
+This is data on a small mammal community in southern Arizona over the last 35
+years.  This is part of a larger project studying the effects of rodents and
+ants on the plant community.  The rodents are sampled on a series of 24 plots,
+with different experimental manipulations of which rodents are allowed to access
+the plots.
+
+This is a real dataset that has been used in over 100 publications.  I've
+simplified it just a little bit for the workshop, but you can download the
+[full dataset](http://esapubs.org/archive/ecol/E090/118/) and work with it using
+exactly the same tools we'll learn about today.
+
+
+Setup
+-----
+
+1. Install Firefox
+2. Install the SQLite Manager add on **Tools -> Add-ons -> Search -> SQLite
+Manager -> Install -> Restart**
+3. Open SQLite Manage **Firefox Button -> Web Developer -> SQLite Manager**
+
+
+
+
 Import
 ------
 
@@ -78,7 +83,8 @@ Import
 8. When asked if you want to modify the table, click **OK**
 9. Set the data types for each field
 
-***EXERCISE: Import the plots and species tables***
+***EXERCISE:**  
+**Import the plots, surveys and species tables***
 
 You can also use this same approach to append new data to an existing table.
 
@@ -95,7 +101,7 @@ table.
 
     SELECT year FROM surveys;
 
-We have capitalized the words SELECT and FROM because they are SQL keywords.
+We have capitalized the words `SELECT` and `FROM` because they are SQL keywords.
 SQL is case insensitive, but it helps for readability – good style.
 
 If we want more information, we can just add a new column to the list of fields,
@@ -103,7 +109,7 @@ right after SELECT:
 
     SELECT year, month, day FROM surveys;
 
-Or we can select all of the columns in a table using the wildcard *
+Or we can select all of the columns in a table using the wildcard `*`
 
     SELECT * FROM surveys;
 
@@ -134,8 +140,8 @@ example, we could round the values to make them easier to read.
 
     SELECT plot, species, sex, wgt, ROUND(wgt / 1000.0, 2) FROM surveys;
 
-***EXERCISE: Write a query that returns
-             The year, month, day, speciesID and weight in mg***
+***EXERCISE:**
+** Write a query that returns year, month, day, speciesID and weight in mg***
 
 Filtering
 ---------
@@ -167,9 +173,8 @@ which have species codes DM, DO, and DS we could combine the tests using OR:
 
     SELECT * FROM surveys WHERE (species = "DM") OR (species = "DO") OR (species = "DS");
 
-***EXERCISE: Write a query that returns
-   The day, month, year, species ID, and weight (in kg) for
-   individuals caught on Plot 1 that weigh more than 75 g***
+***EXERCISE:**  
+*** Write a query that returns day, month, year, species ID, and weight (in kg) for   individuals caught on Plot 1 that weigh more than 75 g***
 
 
 Saving & Exporting results
@@ -259,7 +264,8 @@ The order of the clauses when we write a query is dictated by SQL: SELECT, FROM,
 and we often write each of them on their own line for readability.
 
 
-***Exercise: Let's try to combine what we've learned so far in a single query.
+***Exercise: **  
+**Let's try to combine what we've learned so far in a single query.
 Using the surveys table write a query to display the three date
 fields, species ID, and weight in kilograms (rounded to two decimal places), for
 rodents captured in 1999, ordered alphabetically by the species ID.***
@@ -304,9 +310,10 @@ using a GROUP BY clause
 GROUP BY tells SQL what field or fields we want to use to aggregate the data.
 If we want to group by multiple fields, we give GROUP BY a comma separated list.
 
-***EXERCISE: Write queries that return:***
-***1. How many individuals were counted in each year***
-***2. Average weight of each species in each year**
+**EXERCISE:**  
+** Write queries that return:**  
+**1. How many individuals were counted in each year**  
+**2. Average weight of each species in each year**
 
 We can order the results of our aggregation by a specific column, including the
 aggregated column.  Let’s count the number of individuals of each species
@@ -347,7 +354,8 @@ actual species names.
     FROM surveys
     JOIN species ON surveys.species = species.species_id
 
-***Exercise: Write a query that returns the genus, the species, and the weight
+***EXERCISE**  
+** Write a query that returns the genus, the species, and the weight
    of every individual captured at the site***
 
 Joins can be combined with sorting, filtering, and aggregation.  So, if we
