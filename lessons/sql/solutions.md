@@ -65,11 +65,22 @@ Write queries that return: 1. How many individuals were counted in each year 2. 
 	GROUP BY year
 	ORDER BY COUNT(species)
 	
+	SELECT year, COUNT(*)
+	FROM surveys
+	GROUP BY year;
+	
+	
+	
 	
 	SELECT year, species, SUM(wgt)
 	FROM surveys
 	GROUP BY year, species
 	ORDER BY year
+	
+	
+	SELECT year, species, ROUND(AVG(wgt), 2)
+	FROM surveys
+	GROUP BY year, species;
 	
 	
 

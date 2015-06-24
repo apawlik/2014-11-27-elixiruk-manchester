@@ -133,5 +133,18 @@ being able to drive them is becoming a necessary skill.
     and that it can be used to access networked machines.
 *   The shell's main disadvantages are its primarily textual nature
     and how cryptic its commands and operation can be.
-
-</div>
+    
+ </div>
+ 
+ 
+##### Lessons
+ <ul>
+            </li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/01-filedir.html">Lesson 2: Files and Directories</a></li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/02-create.html">Lesson 3: Creating things</a></li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/03-pipefilter.html">Lesson 4: Pipes and Filters</a></li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/04-loop.html">Lesson 5: Loops</a></li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/05-script.html">Lesson 6: Shell scripts</a></li>
+            <li><a href="http://apawlik.github.io/2014-11-27-elixiruk-manchester/lessons/shell/06-find.html">Lesson 7: Finding things</a></li>
+        </ul>
+ 
